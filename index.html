@@ -1312,7 +1312,7 @@
         function renderReferralPage() {
             database.ref('users/' + currentUser.uid).once('value').then((snapshot) => {
                 const userData = snapshot.val();
-                const referralLink = `https://galaxy-earn.com/?ref=${userData.referralCode}`;
+                const referralLink = `https://galaxy-earn.github.io/galaxy-earn9/?ref=${userData.referralCode}`;
                 const referredUsersCount = userData.referredUsers ? userData.referredUsers.length : 0;
                 const referralEarnings = referredUsersCount * REFERRAL_BONUS_REFERRER;
                 
